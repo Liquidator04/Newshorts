@@ -1,4 +1,4 @@
-import "./input.css";
+import "../input.css";
 
 export default function Footing(){
     return (

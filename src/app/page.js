@@ -1,13 +1,11 @@
 import "./input.css"
-import Heading from "./Heading";
-import Footing from "./Footing";
-import Login from "./Login"
+import Heading from "./Header-Footer/Heading";
+import Footing from "./Header-Footer/Footing";
 
 export default function Home() {
   return (
     <div>
       <Heading />
-      <Login />
       <Footing />
     </div>
   );

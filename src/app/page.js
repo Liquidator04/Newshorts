@@ -1,11 +1,15 @@
+'use client'
+
 import "./input.css"
 import Heading from "./Header-Footer/Heading";
 import Footing from "./Header-Footer/Footing";
+import EmblaCarousel from "./shorts-interface/shorts";
 
 export default function Home() {
-  return (
+  return (  
     <div>
-      <Heading />
+      <Heading /> 
+      <EmblaCarousel />    
       <Footing />
     </div>
   );

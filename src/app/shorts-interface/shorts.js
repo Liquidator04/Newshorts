@@ -2,9 +2,9 @@ import "../input.css";
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from "next/image";
-import test1 from "../../../public/Images/Test1.jpg";
 import test2 from "../../../public/Images/Test2.jpg";
 import test3 from "../../../public/Images/Test3.webp";
+import Comments from "../comments/comments";
 
 var likes=15 , dislikes=3, comments = 5;
 
@@ -15,6 +15,7 @@ export default function EmblaCarousel() {
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
         <div className="embla__slide flex justify-center gap-5">
+        <Comments display="Hide" id="comments"/>
           <div className="flex">
             <video width="300" height="400" controls preload="none">
               <source src="/Video/Video.mp4" type="video/mp4" />
@@ -57,7 +58,6 @@ export default function EmblaCarousel() {
         </div>
         <div className="embla__slide flex justify-center"><Image src={test2} alt="test" width={300} height={400}/></div>
         <div className="embla__slide flex justify-center"><Image src={test3} alt="test" width={300} height={400}/></div>
-        {/* <div className="embla__slide flex justify-center"><Image src={test4} alt="test" width={400} height={250}/></div> */}
       </div>
     </div>
   )
